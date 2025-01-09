@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> -->
+        <script src="script.js" defer></script>
+    <title>Stella - Space Travel in Style</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">Stella*</a>
+        <nav class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="login.html" class="btn">&nbsp;Login&nbsp; <span style="font-size: 1rem">|</span> &nbsp;Signup&nbsp;</a>
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+    <!-- --------------------------------------------Header Section Ends Here---------------------------------------- -->
+    <div class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="https://videos.pexels.com/video-files/8474629/8474629-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-info">
+            <h1>The World's First.<br><span style="font-weight:500; font-size:2.2rem;">Shop for Your Space Odyssey<br><i>—In Style.</i></span></h1>
+            <form id="search-form">
+                <input class="search" type="search" placeholder="I'm looking for..." aria-label="Search" id="search-input">
+                <div id="suggestions" class="suggestions-dropdown"></div>
+                <a href="product.html" class="btn" type="submit"><span style="font-size:1.1em">Search</span></a>
+            </form>
+        </div>
+    </div>
+    <!-- --------------------------------------------Hero Section Ends Here--------------------------------------- -->
+    <div class="stats">
+        <div>
+            <h1>70+</h1>
+            <p>Brand Partners</p>
+        </div>
+        <div>
+            <h1>150+</h1>
+            <p>&nbsp;Accreditation</p>
+        </div>
+        <div>
+            <h1>2000+</h1>
+            <p>Happy Customers</p>
+        </div>
+        <div>
+            <h1>400+</h1>
+            <p>Real Reviews</p>
+        </div>
+    </div>
+    <!-- --------------------------------------------stats Section ends Here--------------------------------------- -->
+    <!-- --------------------------------------------service section starts here--------------------------------------- -->
+    <div class="service">
+        <div class="service_info">
+            <h1 style="font-weight:300; padding-bottom:10px">Your Ultimate Space Travel Hub</h1>
+            <p style="padding-bottom: 25px;">Explore the must-haves and more for the adventure of a lifetime...</p>
+        </div>
+        <div class="service_img">
+            <div data-tooltip="Spacewear">
+                <img src="https://img.icons8.com/dotty/100/astronaut.png" alt="Spacewear">
+            </div>
+            <div data-tooltip="Spacecraft & Parts">
+                <img src="https://img.icons8.com/dotty/100/space-shuttle.png" alt="Spacecraft & Parts">
+            </div>
+            <div data-tooltip="Flights & Cover">
+                <img src="https://img.icons8.com/wired/100/two-tickets.png" alt="Flights & Cover">
+            </div>
+            <div data-tooltip="Storage & Accessories">
+                <img src="https://img.icons8.com/dotty/100/pack-luggage.png" alt="Storage & Accessories">
+            </div>
+            <div data-tooltip="Space & Satellite Communication">
+                <img src="https://img.icons8.com/dotty/100/satellites.png" alt="Space & Satellite Communication">
+            </div>
+            <div data-tooltip="Food & Nutrition">
+                <img src="https://img.icons8.com/dotty/100/vegan-food.png" alt="Food & Nutrition">
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------------------service section ends here---------------------------------- -->
+    <!-- -----------------------------------------featured listing section ends here---------------------------------- -->
+    <div class="featured_listing">
+        <h1 style="font-size:3.0rem">Featured Products</h1>
+        <div class="card">
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/spacesuit.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Orbital Spacesuit</a>
+                        <h2>$25,500</h2>
+                    </div>
+                    <p>Nasa approved orbital spacesuit for adults</p>
+                    <p>Weight: Variable, Restrictions</p>
+                    <hr>
+                    <p>Brand: Micasa</p>
+                    <hr>
+                    <p>Bundle Options: Yes</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 104 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/helmet.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Collision-Resistance Helmet</a>
+                        <h2>$3,750</h2>
+                    </div>
+                    <p>Overall protection for extreme temperature changes, different sizes available</p>
+                    <p>Weight: Variable, Restrictions</p>
+                    <hr>
+                    <p>Brand: Titan</p>
+                    <hr>
+                    <p>Bundle Options: Yes</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 128 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/satellite.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Personal Communication Device (Space-enabled)</a>
+                        <h2>$5,950</h2>
+                    </div>
+                    <p>For Space and Satelite Wave Frequency Communication. Connect to multiple channels in ISS </p>
+                    <p>Weight: 586g</p>
+                    <hr>
+                    <p>Brand: Nano Technologies</p>
+                    <hr>
+                    <p>Bundle Options: -</p>
+                    <hr>
+                <!-- Add this rating div after your title -->
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="rating-count">(4.5/5 from 58 reviews)</span>
+                </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/solar.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Solar-powered Battery Pack</a>
+                        <h2>$1,299</h2>
+                    </div>
+                    <p>Retains charge for 286 days. Light-weight with high solar efficiency</p>
+                    <p>Weight: 1160g</p>
+                    <hr>
+                    <p>Brand: Solar Inc</p>
+                    <hr>
+                    <p>Bundle Options: Yes</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 312 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/food.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Freeze Dried Food Pack (1 Week Supply)</a>
+                        <h2>$750</h2>
+                    </div>
+                    <p></p>
+                    <p>Weight: 7kg</p>
+                    <hr>
+                    <p>Brand: Cienna Foods</p>
+                    <hr>
+                    <p>Bundle Options: Yes</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 103 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/canister.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Gas Canister</a>
+                        <h2>$5,998</h2>
+                    </div>
+                    <p>Combustion protection, comes with easy to activate tool and pump </p>
+                    <p>Weight: Variable, Restrictions</p>
+                    <hr>
+                    <p>Brand: DOI</p>
+                    <hr>
+                    <p>Bundle Options: -</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 128 reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured_btn ">
+            <a href="buy.html" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------------------------------featured listing ends here---------------------------------- -->
+    <!-- -----------------------------------------rental banner section starts here---------------------------------- -->
+    <div class="rental_banner">
+        <div class="video-container">
+            <video id="my-video" src="assets/video/ISS.mp4" autoplay muted loop></video>
+        </div>
+        <div class="rental_banner_info" style="margin-top: 4.4rem;">
+            <h1>Bringing You the Latest Update</h1>
+            <p style="padding-bottom: 1.1rem;">Live from the International Space Station</p>
+            <p>Stay informed with the latest updates from the International Space Station, covering key events and activities as they happen</p>
+            <p style="padding-bottom: 1.2rem;"></p>
+            <a href="rent.html" class="btn">Watch Now</a>
+            <p></p>
+        </div>
+    </div>
+    <!-- -----------------------------------------rental banner section ends here---------------------------------- -->
+ <!-- -----------------------------------------rent property section starts here---------------------------------- -->
+    <div class="featured_listing">
+        <h1 style="font-size:3.0rem; padding-top: 2rem;">Our Brands</h1>
+        <div class="brand_card">
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/nasa.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">NASA</a>
+                        <h2></h2>
+                    </div>
+
+                    <p>Established in 1958</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-count">(4.9/5 from 327 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/lockheed.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Lockheed Martin</a>
+                        <h2></h2>
+                    </div>
+                    <p>Established in 1995</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 135 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/spacex.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">SpaceX</a>
+                        <h2></h2>
+                    </div>
+                    <p>Established in 2002</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 367 reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="featured_listing_card">
+                <div class="product-image-container">
+                    <img src="assets/image/airsq.jpg">
+                </div>
+                <div class="featured_listing_card_info">
+                    <div class="property_title">
+                        <a href="product.html">Air Squared</a>
+                        <h2></h2>
+                    </div>
+                    <p>Established in 1991</p>
+                    <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 198 reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured_btn" style="position: center;">
+            <a href="buy.html" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <!-- -----------------------------------------rent property ends here---------------------------------- -->
+    <!-- -----------------------------------------Footer section starts here---------------------------------- -->
+    <footer class="footer">
+        <video autoplay muted loop id="footer-video">
+            <source src="https://videos.pexels.com/video-files/8474660/8474660-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="footer_main">
+            <div class="footer_info">
+                <H2 style="font-family: Inknut Antiqua; font-weight:200; padding-bottom: 18.99999px;">Stella*</H2>
+                <p></p>
+                <a href="mailto:"><p>here2help@stella.space</p></a>
+                <a href="tel-phone"><i class="fa fa-phone"></i> (+65) 87654321</a>
+            </div>
+            <div class="footer_link">
+                <h2 style="font-weight: 200; padding-bottom:20px;">Support</h2>
+                <div class="link_column">
+                    <div>
+                        <a href="faq.html">FAQ</a>
+                        <a href="shipping.html">Shipping</a>
+                        <a href="returns.html">Returns</a>
+                        <a href="history.html">Order History</a>
+                    </div>
+                    <div>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="policy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_newsletter">
+                <h2 style="font-weight: 200; padding-top:20px; padding-bottom:18.99898px;">Subcribe to Our Newsletter</h2>
+                <label for="email">
+                    <input type="email" name="email" class="email"
+                        placeholder="Enter your e-mail"><i><button type="submit">Subscribe</button></i>
+                </label>
+                <div>
+                    <input type="checkbox" name="checkbox" class="term"> I have read and agree to the <a
+                        href="policy.html">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_secondary">
+            <p style="margin-left:2rem">Stella &copy 2025. All rights reserved.</p>
+            <p style="margin-left:49px;"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></p>
+        </div>
+    </footer>
+    <!-- -----------------------------------------footer section ends here---------------------------------- -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Search suggestions
+            const searchInput = document.getElementById('search-input');
+            const suggestionsDropdown = document.getElementById('suggestions');
+        
+            // Sample product data with links
+            const products = [
+                { name: 'Collision-Resistance Helmet', link: 'product.html' },
+                { name: 'Orbital Spacesuit', link: 'buy.html' },
+                { name: 'Solar-powered Battery Pack', link: 'buy.html' },
+                { name: 'Gas Canister', link: 'buy.html' },
+                { name: 'Freeze Dried Food Pack', link: 'buy.html' },
+                { name: 'Personal Communication Device', link: 'buy.html' },
+                { name: 'Spacecraft & Parts', link: 'buy.html' },
+                { name: 'Spacewear', link: 'product.html' },
+                { name: 'Flights & Cover', link: 'buy.html' },
+                { name: 'Storage & Accessories', link: 'buy.html' }
+            ];
+        
+            // Function to filter and display suggestions
+            searchInput.addEventListener('input', function() {
+                const query = this.value.toLowerCase();
+                suggestionsDropdown.innerHTML = ''; // Clear previous suggestions
+                if (query) {
+                    const filteredProducts = products.filter(product => product.name.toLowerCase().includes(query));
+                    if (filteredProducts.length > 0) {
+                        suggestionsDropdown.style.display = 'block'; // Show suggestions
+                        filteredProducts.forEach(product => {
+                            const suggestionItem = document.createElement('div');
+                            suggestionItem.textContent = product.name;
+                            suggestionItem.addEventListener('click', function() {
+                                window.location.href = product.link; // Redirect to the product link
+                            });
+                            suggestionsDropdown.appendChild(suggestionItem);
+                        });
+                    } else {
+                        suggestionsDropdown.style.display = 'none'; // Hide if no matches
+                    }
+                } else {
+                    suggestionsDropdown.style.display = 'none'; // Hide if input is empty
+                }
+            });
+        
+            // Hide suggestions when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!searchInput.contains(event.target) && !suggestionsDropdown.contains(event.target)) {
+                    suggestionsDropdown.style.display = 'none'; // Hide suggestions
+                }
+            });
+        });
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

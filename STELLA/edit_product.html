@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png"> -->
+    <script src="script.js" defer></script>
+    <title>Stella - Space Travel in Style</title>
+</head>
+
+<body>
+        <header>
+        <a href="index.html" class="logo">Stella*</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="sell.html">Sell</a>
+            <a class="active" href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="login.html" class="btn">&nbsp;Logout&nbsp;</a>
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+    <!-- --------------------------------------------Header Section Ends Here---------------------------------------- -->
+    <div class="about">
+        <video autoplay muted loop id="about-video">
+            <source src="https://videos.pexels.com/video-files/8474629/8474629-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="about-info">
+            <br>
+            <br>
+            <div class="search_bar">    
+                <div class="search_bar-info">
+                    <form>
+                        <input class="search" type="search" placeholder="I'm looking for..." aria-label="Search">
+                        <i><button class="btn" type="submit"><span style="font-size:1.1em">Search</span></button></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Add this after your header and before your main content -->
+<!-- Start fresh with product container -->
+<div class="product-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <h3 style="font-weight: 100; font-size: 0.9rem; margin-top: -20px; padding-bottom: 80px;">Welcome Back, AeroDynamics!</h3>
+            <!-- Your category content -->
+            <ul class="category-list">
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>My Account</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Change Details</a></li>
+                        <li><a href="#">Currency Changer</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">My Messages</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Store Analytics</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Past Week</a></li>
+                        <li><a href="#">Past Month</a></li>
+                        <li><a href="#">Past Year</a></li>
+                        <li><a href="#">To Date</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Track My Inventory</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Low Stock Alerts</a></li>
+                        <li><a href="#">Inventory Report</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Settings</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Privacy & Security</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Language and Region Settings</a></li>
+                        <li><a href="#">Subscription & Membership</a></li>
+                        <li><a href="#">Appearance/Theme Settings</a></li>
+                        <li><a href="#">Social Integration</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Help & Support</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>View My Store</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Shopper's View</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Sort dropdown -->
+        <div class="sort-container">
+            <select class="sort-dropdown">
+                <!-- Your sort options -->
+                <option value="" disabled selected>Sort By</option>
+                <option value="bestsellers">Bestsellers</option>
+                <option value="rated">Highly Rated</option>
+                <option value="brand">Shop by Brand</option>
+                <option value="price-high">Price - High to Low</option>
+                <option value="price-low">Price - Low to High</option>
+            </select>
+        </div>
+
+            <!-- Product Info and Analytics Grid -->
+    <div class="seller-dashboard-grid">
+        <!-- Left Side: Product Info -->
+        <div class="product_info seller-product">
+            <!-- Product Title and Stats -->
+            <h2 style="font-size: 2.4rem; font-weight: 500;">Collision-Resistance Helmet</h2>
+            <br>
+            <br>
+            <div class="product-stats">
+                <div class="stat">
+                    <span class="stat-label">Views</span>
+                    <span class="stat-value">1,234</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Sales</span>
+                    <span class="stat-value">56</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">$210,000</span>
+                </div>
+            </div>
+
+        <div class="product-container">
+            <!-- Left Side: Product Info -->
+            <div class="product_info seller-product">
+            <!-- Status and Actions -->
+            <div class="product-status">
+                <div class="status-section">
+                    <span class="status-badge active">Active</span>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-edit"><i class="fas fa-edit"></i> Edit Listing</button>
+                    <button class="btn-delete"><i class="fas fa-trash"></i> Delete</button>
+                </div>
+            </div>
+
+<!-- Product Photo Gallery -->
+<div class="product-gallery">
+    <!-- Main Image -->
+    <div class="main-image">
+        <img src="assets/image/helmet.jpg" alt="Main Product Image" id="mainImage">
+    </div>
+    
+    <!-- Gallery Management Section -->
+    <div class="gallery-management">
+        <button class="btn-upload"><i class="fas fa-upload"></i> Upload New Photo</button>
+        <button class="btn-manage"><i class="fas fa-cog"></i> Manage Photos</button>
+    </div>
+
+    <!-- Simple Scrollable Thumbnail Strip -->
+    <div class="thumbnail-container">
+        <div class="thumbnail-strip">
+            <div class="thumbnail active">
+                <img src="assets/image/helmet.jpg" alt="Thumbnail 1">
+            </div>
+            <div class="thumbnail">
+                <img src="assets/image/helmet2.jpg" alt="Thumbnail 2">
+            </div>
+            <div class="thumbnail">
+                <img src="assets/image/helmet3.jpg" alt="Thumbnail 3">
+            </div>
+            <div class="thumbnail">
+                <img src="assets/image/helmet4.jpg" alt="Thumbnail 4">
+            </div>
+            <div class="thumbnail add-photo">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Product Details -->
+            <div class="product-details">
+                <div class="detail-row">
+                    <span class="label">Stock:</span>
+                    <span class="value">15 units</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Category:</span>
+                    <span class="value">Safety Equipment</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Listed Date:</span>
+                    <span class="value">Jan 15, 2025</span>
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h3>Description</h3>
+                <p>Ensure your safety during space adventures with our cutting-edge collision-resistant helmet...</p>
+            </div>
+
+            <div class="features-section">
+                <h3>Features</h3>
+                <ul>
+                    <li style="margin-left: 20px;">Advanced Impact Protection</li>
+                    <li style="margin-left: 20px;">Integrated Communication System</li>
+                    <li style="margin-left: 20px;">Anti-fog Visor</li>
+                </ul>
+            </div>
+
+            <div class="accreditation-section">
+                <h3 style="margin-top: 0.5rem;">Certifications</h3>
+                <div class="certification-badges">
+                    <span class="badge">ISO Certified</span>
+                    <span class="badge">Space Safety Approved</span>
+                    <span class="badge">Quality Tested</span>
+                </div>
+            </div>
+        </div>
+
+                <!-- Right Side: Analytics -->
+                <div class="seller-analytics">
+                    <div class="analytics-card">
+                        <h3 style="font-size: 1.5rem; font-weight: 600;">Performance Overview</h3>
+                        <div class="chart-container">
+                            <div class="sales-chart-container">
+                                <img src="assets/image/chart.jpg" alt="Sales Chart">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="analytics-card">
+                        <h3 style="font-size: 1.5rem; font-weight: 600;">Recent Orders</h3>
+                        <div class="orders-list">
+                            <div class="order-item">
+                                <div class="order-info">
+                                    <span class="order-id">#12345</span>
+                                    <span class="order-date">Jan 20, 2025</span>
+                                </div>
+                                <span class="order-amount">$3,750</span>
+                            </div>
+                            <!-- More order items -->
+                        </div>
+                    </div>
+                </div>
+    
+                <h2 style="margin-top: 3rem;">Collision-Resistance Helmet</h2>
+                <div class="product-stats">
+                    <div class="stat">
+                        <span class="stat-label">Views</span>
+                        <span class="stat-value">1,234</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Sales</span>
+                        <span class="stat-value">56</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Revenue</span>
+                        <span class="stat-value">$210,000</span>
+                    </div>
+                </div>
+
+
+    </div>
+</div>
+         
+     </div>
+     
+    </div>
+</div>
+
+
+<!-- -----------------------------------------Footer section starts here---------------------------------- -->
+<footer class="footer">
+    <video autoplay muted loop id="footer-video">
+        <source src="https://videos.pexels.com/video-files/8474660/8474660-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="footer_main">
+        <div class="footer_info">
+            <H2 style="font-family: Inknut Antiqua; font-weight:200; padding-bottom: 18.99999px;">Stella*</H2>
+            <p></p>
+            <a href="mailto:"><p>here2help@stella.space</p></a>
+            <a href="tel-phone"><i class="fa fa-phone"></i> (+65) 87654321</a>
+        </div>
+        <div class="footer_link">
+            <h2 style="font-weight: 200; padding-bottom:20px;">Support</h2>
+            <div class="link_column">
+                <div>
+                    <a href="faq.html">FAQ</a>
+                    <a href="shipping.html">Shipping</a>
+                    <a href="returns.html">Returns</a>
+                    <a href="history.html">Order History</a>
+                </div>
+                <div>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_newsletter">
+            <h2 style="font-weight: 200; padding-top:20px; padding-bottom:18.99898px;">Subcribe to Our Newsletter</h2>
+            <label for="email">
+                <input type="email" name="email" class="email"
+                    placeholder="Enter your e-mail"><i><button type="submit">Subscribe</button></i>
+            </label>
+            <div>
+                <input type="checkbox" name="checkbox" class="term"> I have read and agree to the <a
+                    href="policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_secondary">
+        <p style="margin-left:2rem; font-size: 0.5rem;">Stella &copy 2025. All rights reserved.</p>
+        <p style="align-items: center; padding-left: 2rem; padding-bottom: 0.11rem;"><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></p>
+    </div>
+</footer>
+<!-- -----------------------------------------footer section ends here---------------------------------- -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const mainImage = document.getElementById('mainImage');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', function() {
+            // Skip if it's the add photo button
+            if (this.classList.contains('add-photo')) return;
+
+            // Remove active class from all thumbnails
+            thumbnails.forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked thumbnail
+            this.classList.add('active');
+            
+            // Update main image
+            const thumbnailImg = this.querySelector('img');
+            if (thumbnailImg) {
+                mainImage.src = thumbnailImg.src;
+            }
+        });
+    });
+});
+</script>
+
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle subcategories
+            const categoryHeaders = document.querySelectorAll('.category-header');
+            
+            categoryHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const subcategoryList = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    subcategoryList.classList.toggle('active');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        });
+    </script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+    // items: 4,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:false,
+            loop:true
+        }
+    }
+})
+</script>
+</body>
+</html>

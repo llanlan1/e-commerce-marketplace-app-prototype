@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="favicon-32x32.png"> -->
+    <script src="script.js" defer></script>
+    <title>Stella - Space Travel in Style</title>
+</head>
+
+<body>
+        <header>
+        <a href="index.html" class="logo">Stella*</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="buy.html">Buy</a>
+            <a href="sell.html">Sell</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="seller_login.html" class="btn">&nbsp;Logout&nbsp;</a>
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+    </header>
+    <!-- --------------------------------------------Header Section Ends Here---------------------------------------- -->
+    <div class="about">
+        <video autoplay muted loop id="about-video">
+            <source src="https://videos.pexels.com/video-files/8474629/8474629-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="about-info">
+            <br>
+            <br>
+            <div class="search_bar">    
+                <div class="search_bar-info">
+                    <form>
+                        <input class="search" type="search" placeholder="I'm looking for..." aria-label="Search">
+                        <i><button class="btn" type="submit"><span style="font-size:1.1em">Search</span></button></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Add this after your header and before your main content -->
+<!-- Start fresh with product container -->
+<div class="product-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-section">
+            <h3 style="font-weight: 100; font-size: 0.9rem; margin-top: -20px; padding-bottom: 80px;">Welcome Back, AeroDynamics!</h3>
+            <!-- Your category content -->
+            <ul class="category-list">
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>My Account</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Change Details</a></li>
+                        <li><a href="#">Currency Changer</a></li>
+                        <li><a href="#">Change Password</a></li>
+                        <li><a href="#">My Messages</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Store Analytics</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Past Week</a></li>
+                        <li><a href="#">Past Month</a></li>
+                        <li><a href="#">Past Year</a></li>
+                        <li><a href="#">To Date</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Track My Inventory</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Low Stock Alerts</a></li>
+                        <li><a href="#">Inventory Report</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Settings</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Account Settings</a></li>
+                        <li><a href="#">Privacy & Security</a></li>
+                        <li><a href="#">Notifications</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Language and Region Settings</a></li>
+                        <li><a href="#">Subscription & Membership</a></li>
+                        <li><a href="#">Appearance/Theme Settings</a></li>
+                        <li><a href="#">Social Integration</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>Help & Support</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                    </ul>
+                </li>
+                <li class="category-item">
+                    <div class="category-header">
+                        <span>View My Store</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <ul class="subcategory-list">
+                        <li><a href="#">Shopper's View</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <!-- Sort dropdown -->
+        <div class="sort-container">
+            <select class="sort-dropdown">
+                <!-- Your sort options -->
+                <option value="" disabled selected>Sort By</option>
+                <option value="bestsellers">Bestsellers</option>
+                <option value="rated">Highly Rated</option>
+                <option value="brand">Shop by Brand</option>
+                <option value="price-high">Price - High to Low</option>
+                <option value="price-low">Price - Low to High</option>
+            </select>
+        </div>
+
+        <!-- Featured listings -->
+        <div class="featured_listing">
+            <h1>All Products</h1>
+            <div class="card">
+                <!-- Your product cards -->
+                <div class="featured_listing_card">
+                    <img src="assets/image/spacesuit.jpg">
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Orbital Spacesuit</a>
+                            <h2>$25,500</h2>
+                        </div>
+                        <p>Nasa approved orbital spacesuit for adults</p>
+                        <p>Weight: Variable, Restrictions</p>
+                        <hr>
+                        <p>Brand: Micasa</p>
+                        <hr>
+                        <p>Bundle Options: Yes</p>
+                        <hr>
+                        <!-- Add this rating div after your title -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5/5 from 104 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_listing_card">
+                    <div class="product-image-container">
+                        <img src="assets/image/helmet.jpg">
+                    </div>
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Collision-Resistance Helmet</a>
+                            <h2>$3,750</h2>
+                        </div>
+                        <p>Overall protection for extreme temperature changes, different sizes available</p>
+                        <p>Weight: Variable, Restrictions</p>
+                        <hr>
+                        <p>Brand: Titan</p>
+                        <hr>
+                        <p>Bundle Options: Yes</p>
+                        <hr>
+                        <!-- Add this rating div after your title -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5/5 from 128 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_listing_card">
+                    <div class="product-image-container">
+                        <img src="assets/image/satellite.jpg">
+                    </div>
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Personal Communication Device (Space-enabled)</a>
+                            <h2>$5,950</h2>
+                        </div>
+                        <p>For Space and Satelite Wave Frequency Communication. Connect to multiple channels in ISS </p>
+                        <p>Weight: 586g</p>
+                        <hr>
+                        <p>Brand: Nano Technologies</p>
+                        <hr>
+                        <p>Bundle Options: -</p>
+                        <hr>
+                    <!-- Add this rating div after your title -->
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(4.5/5 from 58 reviews)</span>
+                    </div>
+                    </div>
+                </div>
+                <div class="featured_listing_card">
+                    <div class="product-image-container">
+                        <img src="assets/image/solar.jpg">
+                    </div>
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Solar-powered Battery Pack</a>
+                            <h2>$1,299</h2>
+                        </div>
+                        <p>Retains charge for 286 days. Light-weight with high solar efficiency</p>
+                        <p>Weight: 1160g</p>
+                        <hr>
+                        <p>Brand: Solar Inc</p>
+                        <hr>
+                        <p>Bundle Options: Yes</p>
+                        <hr>
+                        <!-- Add this rating div after your title -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5/5 from 312 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_listing_card">
+                    <div class="product-image-container">
+                        <img src="assets/image/food.jpg">
+                    </div>
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Freeze Dried Food Pack (1 Week Supply)</a>
+                            <h2>$750</h2>
+                        </div>
+                        <p></p>
+                        <p>Weight: 7kg</p>
+                        <hr>
+                        <p>Brand: Cienna Foods</p>
+                        <hr>
+                        <p>Bundle Options: Yes</p>
+                        <hr>
+                        <!-- Add this rating div after your title -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5/5 from 103 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_listing_card">
+                    <div class="product-image-container">
+                        <img src="assets/image/canister.jpg">
+                    </div>
+                    <div class="featured_listing_card_info">
+                        <div class="property_title">
+                            <a href="product.html">Gas Canister</a>
+                            <h2>$5,998</h2>
+                        </div>
+                        <p>Combustion protection, comes with easy to activate tool and pump </p>
+                        <p>Weight: Variable, Restrictions</p>
+                        <hr>
+                        <p>Brand: DOI</p>
+                        <hr>
+                        <p>Bundle Options: -</p>
+                        <hr>
+                        <!-- Add this rating div after your title -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(4.5/5 from 128 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Close product-container -->
+<!-- -----------------------------------------featured listing ends here---------------------------------- -->
+<!-- -----------------------------------------Footer section starts here---------------------------------- -->
+<footer class="footer">
+    <video autoplay muted loop id="footer-video">
+        <source src="https://videos.pexels.com/video-files/8474660/8474660-hd_1920_1080_30fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="footer_main">
+        <div class="footer_info">
+            <H2 style="font-family: Inknut Antiqua; font-weight:200; padding-bottom: 18.99999px;">Stella*</H2>
+            <p></p>
+            <a href="mailto:"><p>here2help@stella.space</p></a>
+            <a href="tel-phone"><i class="fa fa-phone"></i> (+65) 87654321</a>
+        </div>
+        <div class="footer_link">
+            <h2 style="font-weight: 200; padding-bottom:20px;">Support</h2>
+            <div class="link_column">
+                <div>
+                    <a href="index.html">FAQ</a>
+                    <a href="buy.html">Shipping</a>
+                    <a href="sell.html">Returns</a>
+                    <a href="rent.html">Order History</a>
+                </div>
+                <div>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms and Conditions</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_newsletter">
+            <h2 style="font-weight: 200; padding-top:20px; padding-bottom:18.99898px;">Subcribe to Our Newsletter</h2>
+            <label for="email">
+                <input type="email" name="email" class="email"
+                    placeholder="Enter your e-mail"><i><button type="submit">Subscribe</button></i>
+            </label>
+            <div>
+                <input type="checkbox" name="checkbox" class="term"> I have read and agree to the <a
+                    href="policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_secondary">
+        <p style="margin-left:2rem">Stella &copy 2025. All rights reserved.</p>
+        <p style="margin-left:49px;"></i><i class="fa fa-twitter"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i></p>
+    </div>
+</footer>
+<!-- -----------------------------------------footer section ends here---------------------------------- -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Toggle subcategories
+            const categoryHeaders = document.querySelectorAll('.category-header');
+            
+            categoryHeaders.forEach(header => {
+                header.addEventListener('click', () => {
+                    const subcategoryList = header.nextElementSibling;
+                    const icon = header.querySelector('i');
+                    
+                    subcategoryList.classList.toggle('active');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        });
+    </script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+	<script type="text/javascript">
+	$('.owl-carousel').owlCarousel({
+    // items: 4,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:false,
+            loop:true
+        }
+    }
+})
+</script>
+</body>
+</html>

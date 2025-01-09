@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Seller Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="left">
+      <div id="signin">
+        <div class="logo">
+          <a href="index.html"><span style="font-family: 'Inknut Antiqua', serif; font-weight: 200">Stella*</span></a>
+        </div>
+        <form>
+          <div>
+            <label>Email</label>
+            <input type="email" class="text-input" placeholder="Enter your email address" required />
+          </div>
+          <div>
+            <label>Password</label>
+            <input type="password" class="text-input" placeholder="Enter your password" required />
+          </div>
+          <br>
+          <!-- <button type="submit" class="btn primary-btn">Sign In</button> -->
+          <a href="store.html" type="submit" class="btn primary-btn">Login as Seller</a>
+        </form>
+        <div class="links">
+          <a href="#">Forgot Password</a>
+        </div>
+        <div class="or">
+          <hr class="bar" />
+          <span>OR</span>
+          <hr class="bar" />
+        </div>
+        <a href="seller_signup.html" class="secondary-btn">Create a Seller Account</a>
+      </div>
+      <footer id="main-footer">
+        <p>Copyright &copy; 2025. Stella All Rights Reserved</p>
+        <div>
+          <br>
+          <a href="terms.html">Terms of use</a> | <a href="policy.html">Privacy Policy</a>
+        </div>
+      </footer>
+    </div>
+    <div id="right">
+      <div id="showcase">
+        <div class="showcase-content">
+          <p class="showcase-text">
+            Not Yet a Seller?
+          </p>
+          <br>
+          <br>
+          <a href="seller_signup.html" class="secondary-btn">&nbsp;Register as Seller&nbsp;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------------------footer section ends here---------------------------------- -->
+  <script type="text/javascript" src="assets/js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const loginForm = document.getElementById('login-form');
+  
+      loginForm.addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent default form submission
+  
+          // Get form values
+          const email = document.getElementById('email').value.trim();
+          const password = document.getElementById('password').value.trim();
+  
+          // Validate email
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
+          if (!emailPattern.test(email)) {
+              alert('Please enter a valid email address.');
+              return; // Prevent form submission
+          }
+  
+          // Validate password
+          const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{10,}$/;
+          if (!passwordPattern.test(password)) {
+              alert('Password must be at least 10 characters long and include at least one uppercase letter, one lowercase letter, one number, and one special character.');
+              return; // Prevent form submission
+          }
+  
+          // If all validations pass, redirect to another page
+          alert('Login successful! Redirecting...');
+          window.location.href = 'anotherPage.html'; // Change to your target page
+      });
+  });
+  </script>
+
+</body>
+
+</html>

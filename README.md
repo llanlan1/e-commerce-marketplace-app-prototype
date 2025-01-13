@@ -6,6 +6,13 @@ Building a PROTOTYPE for a Space Travel Marketplace Web App Using Html, CSS and 
 # Forked from
 https://sujanban.github.io/realestate-marketplace/
 
+# Frontend Scripting
+by owner (llanlan1)
+
+# Notes
+This is an initial prototype draft for a group project.
+Prototype draft by owner (llanlan1).
+Final work will be a group collaboration. 
 
 Styling is done in both inline and CSS stylesheet.
 Not optimised for mobile devices.
